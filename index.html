@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify-Dashboard</title>
+    <link rel="stylesheet" href="app.css">
+    <!-- <script src="app.js" defer></script> -->
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" class="logo">
+
+            <div class="search">
+                <img src="https://crushingit.tech/hackathon-assets/icon-search.svg" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="buttons">
+            <div class="notifications">
+                <img src="https://crushingit.tech/hackathon-assets/icon-bell.svg" alt="">
+            </div>
+            <div class="admin" onclick="toggleMenu()">
+                <p id="adminDC">Davii Collections</p>
+                <big>DC</big>
+            </div>
+        </div>
+        <div class="sub-menu-wrap" id="subMenu" >
+            <div class="sub-menu">
+                <div class="adminDC-dropdown">
+                    <big>DC</big>
+                    <p>Davii Collections</p>
+                    <small>&#10003;</small>
+                </div>
+                <div class="my-store">
+                    <img src="https://crushingit.tech/hackathon-assets/icon-store.svg" alt="">
+                    <p>All stores</p>
+                </div>
+                <hr>
+
+                <a href="#" class="sub-menu-link">
+                    <p>Help Center</p>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Changelog</p>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Community forums</p>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Hire a Shopify Partner</p>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Keyboard shortcuts</p>
+                </a>
+                <hr>
+                <p class="name">David Michael </p>
+                <p class="sub-menu-link-email">davidmicheal@gmail.com</p>
+
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Manage account</p>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Log Out</p>
+                </a>
+            </div>
+        </div>
+        </nav>
+    </div>
+
+    
+
+    <section class="offers">
+        <div class="offers-container">
+            <p>Extend your trial for $1/month for 3 months on select plans.</p>
+            <button class="btn">Select a plan</button>
+            <img src="https://crushingit.tech/hackathon-assets/icon-cross.svg" alt="">
+            
+        </div>
+
+    </section>
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu() {
+        console.log("Toggle menu function called");
+        subMenu.classList.toggle("open-menu");
+        console.log("ClassList:", subMenu.classList);
+    }
+</script>
+</body>
+</html>
